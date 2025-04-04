@@ -2,9 +2,18 @@
 //Questão 1;
 //somador de numeros;
 
-let N = parseFloat("Ditige um número");    //variável 1
-let i= parseInt('Quantos numeros você quer somar?')
-for (i){
-    let r=(r+N); 
+
+
+let i= (parseFloat(prompt('Quantos números você quer somar?')));
+
+function somandoNumero(i) {
+    let r = 0 // variável acumuladora 
+        for (let x= 0; i > x ; x++){
+         let N = (parseFloat(prompt('digite um numero')));
+ 
+         r=(r+N); 
+        }
+    console.log('A soma final é..'+ r);
 }
-cosole.log(`A soma final é..'+ r); 
+//chamando a função
+somandoNumero(i)
